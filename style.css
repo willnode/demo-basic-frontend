@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/background-2.jpg) center/cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto';
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat';
+}
+
+body main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.card.border {
+    border: 3px solid black;
+}
+
+.card.split {
+    display: flex;
+    padding: 0;
+}
+
+.card.gallery {
+    background: #0007;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery>div {
+    width: 30%;
+    height: 15vw;
+    margin: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .gallery>div {
+        width: 45%;
+        height: 20vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .gallery>div {
+        width: 90%;
+        height: 25vw;
+    }
+}
+
+.gallery img {
+    height: 100%;
+}
+
+.bio {
+    padding: 20px;
+    text-align: left;
+}
+
+.bio a {
+    display: inline-block;
+    background: darkred;
+    padding: 5px 10px;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.overlay img {
+    display: block;
+    object-fit: cover;
+    max-height: 70vh;
+    width: 100%;
+}
+
+.navbar {
+    background: #0007;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.navbar .active {
+    background: #0007;
+}
+
+.photo-profile {
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
